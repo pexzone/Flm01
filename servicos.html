@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços | Flame Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            flame: {
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fdba74 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-black text-white antialiased">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-semibold tracking-wider">
+        FLAME <span class="text-flame-500">AGENCY</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-flame-400 transition">Início</a>
+        <a href="servicos.html" class="text-flame-400">Serviços</a>
+        <a href="quem-somos.html" class="hover:text-flame-400 transition">Quem Somos</a>
+        <a href="contato.html" class="hover:text-flame-400 transition">Contato</a>
+        <a href="login.html" class="ml-4 px-5 py-2 border border-flame-500 text-flame-400 rounded-full hover:bg-flame-500 hover:text-black transition font-medium">
+          Já sou Cliente
+        </a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-white/10 px-6 py-4 flex flex-col gap-4 text-sm">
+      <a href="index.html">Início</a>
+      <a href="servicos.html" class="text-flame-400">Serviços</a>
+      <a href="quem-somos.html">Quem Somos</a>
+      <a href="contato.html">Contato</a>
+      <a href="login.html" class="text-flame-400">Já sou Cliente</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="pt-32 pb-16">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-flame-400 text-sm font-medium tracking-widest uppercase mb-4">Nossos Serviços</p>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">Marketing completo<br><span class="gradient-text">para o seu negócio</span></h1>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+        Da estratégia à execução. Tudo o que sua marca precisa para crescer com consistência e resultado.
+      </p>
+    </div>
+  </section>
+
+  <!-- Serviços detalhados -->
+  <section class="pb-24">
+    <div class="max-w-5xl mx-auto px-6 space-y-8">
+      
+      <div class="p-8 md:p-10 bg-zinc-950 border border-white/10 rounded-2xl hover:border-flame-500/30 transition">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="flex-shrink-0 w-14 h-14 rounded-full bg-flame-500/10 flex items-center justify-center">
+            <span class="text-2xl font-bold text-flame-500">01</span>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-3">Diagnóstico Estratégico</h3>
+            <p class="text-gray-400 leading-relaxed mb-4">
+              Antes de qualquer ação, entendemos profundamente o seu negócio, mercado, público e concorrência. 
+              Criamos a base sólida para todas as decisões de marketing.
+            </p>
+            <ul class="text-sm text-gray-500 space-y-1">
+              <li>• Análise de mercado e posicionamento</li>
+              <li>• Definição de personas e jornada do cliente</li>
+              <li>• Planejamento estratégico personalizado</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-8 md:p-10 bg-zinc-950 border border-white/10 rounded-2xl hover:border-flame-500/30 transition">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="flex-shrink-0 w-14 h-14 rounded-full bg-flame-500/10 flex items-center justify-center">
+            <span class="text-2xl font-bold text-flame-500">02</span>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-3">Criação Visual & Produção</h3>
+            <p class="text-gray-400 leading-relaxed mb-4">
+              Identidade visual, fotos profissionais, vídeos institucionais e conteúdos criativos que 
+              comunicam a essência da sua marca com impacto.
+            </p>
+            <ul class="text-sm text-gray-500 space-y-1">
+              <li>• Produção de fotos e vídeos profissionais</li>
+              <li>• Identidade visual e materiais gráficos</li>
+              <li>• Conteúdo para redes sociais</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-8 md:p-10 bg-zinc-950 border border-white/10 rounded-2xl hover:border-flame-500/30 transition">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="flex-shrink-0 w-14 h-14 rounded-full bg-flame-500/10 flex items-center justify-center">
+            <span class="text-2xl font-bold text-flame-500">03</span>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-3">Distribuição Multicanal</h3>
+            <p class="text-gray-400 leading-relaxed mb-4">
+              Seu conteúdo no lugar certo, na hora certa. Gerenciamos a presença da sua marca 
+              onde o seu público realmente está.
+            </p>
+            <ul class="text-sm text-gray-500 space-y-1">
+              <li>• Gestão de redes sociais</li>
+              <li>• Google Business Profile</li>
+              <li>• E-mail marketing e outros canais</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-8 md:p-10 bg-zinc-950 border border-white/10 rounded-2xl hover:border-flame-500/30 transition">
+        <div class="flex flex-col md:flex-row gap-6">
+          <div class="flex-shrink-0 w-14 h-14 rounded-full bg-flame-500/10 flex items-center justify-center">
+            <span class="text-2xl font-bold text-flame-500">04</span>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-3">Campanhas e Performance</h3>
+            <p class="text-gray-400 leading-relaxed mb-4">
+              Anúncios pagos e campanhas com foco total em resultado. Acompanhamos métricas, 
+              otimizamos e geramos crescimento real.
+            </p>
+            <ul class="text-sm text-gray-500 space-y-1">
+              <li>• Tráfego pago (Meta Ads, Google Ads)</li>
+              <li>• Otimização contínua de campanhas</li>
+              <li>• Relatórios e análise de performance</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-zinc-950 border-t border-white/10">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Quer transformar a presença da sua marca?</h2>
+      <p class="text-gray-400 mb-8">Fale com a gente e descubra como podemos ajudar o seu negócio a crescer.</p>
+      <a href="contato.html" class="inline-block px-8 py-4 bg-flame-500 text-black font-semibold rounded-full hover:bg-flame-400 transition">
+        Solicitar orçamento
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-xl font-semibold tracking-wider">FLAME <span class="text-flame-500">AGENCY</span></div>
+      <div class="text-sm text-gray-500">© 2026 Flame Agency</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

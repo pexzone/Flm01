@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Área do Cliente | Flame Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            flame: { 400: '#fb923c', 500: '#f97316', 600: '#ea580c' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fdba74 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-black text-white antialiased min-h-screen flex flex-col">
+
+  <nav class="border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-semibold tracking-wider">FLAME <span class="text-flame-500">AGENCY</span></a>
+      <a href="index.html" class="text-sm text-gray-400 hover:text-white transition">← Voltar ao site</a>
+    </div>
+  </nav>
+
+  <main class="flex-1 flex items-center justify-center px-6 py-16">
+    <div class="w-full max-w-md">
+      <div class="text-center mb-10">
+        <h1 class="text-3xl font-bold mb-3">Área do Cliente</h1>
+        <p class="text-gray-400">Acesse seu dashboard, agendas, autorizações e arquivos.</p>
+      </div>
+
+      <div class="bg-zinc-950 border border-white/10 rounded-2xl p-8">
+        <form action="#" method="POST" class="space-y-6">
+          <div>
+            <label class="block text-sm font-medium mb-2">E-mail</label>
+            <input type="email" name="email" required class="w-full px-4 py-3 bg-black border border-white/10 rounded-lg focus:outline-none focus:border-flame-500 transition" placeholder="seu@email.com">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-2">Senha</label>
+            <input type="password" name="senha" required class="w-full px-4 py-3 bg-black border border-white/10 rounded-lg focus:outline-none focus:border-flame-500 transition" placeholder="••••••••">
+          </div>
+          
+          <div class="flex items-center justify-between text-sm">
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="checkbox" class="rounded border-white/20 bg-black text-flame-500 focus:ring-flame-500">
+              <span class="text-gray-400">Lembrar de mim</span>
+            </label>
+            <a href="#" class="text-flame-400 hover:text-flame-300">Esqueci a senha</a>
+          </div>
+
+          <button type="submit" class="w-full py-4 bg-flame-500 text-black font-semibold rounded-lg hover:bg-flame-400 transition">
+            Entrar
+          </button>
+        </form>
+
+        <div class="mt-8 pt-6 border-t border-white/10 text-center">
+          <p class="text-sm text-gray-500">
+            Ainda não tem acesso?<br>
+            <span class="text-gray-400">Fale com seu gestor de conta na Flame.</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Aviso de desenvolvimento -->
+      <div class="mt-8 p-4 bg-flame-500/10 border border-flame-500/20 rounded-xl text-center">
+        <p class="text-sm text-flame-400">
+          <strong>Em desenvolvimento:</strong> A área completa do cliente (dashboard, autorizações, agenda de gravações e arquivos) será liberada em breve.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-white/10 py-8">
+    <div class="max-w-7xl mx-auto px-6 text-center text-sm text-gray-500">
+      © 2026 Flame Agency
+    </div>
+  </footer>
+
+</body>
+</html>

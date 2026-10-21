@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato | Flame Agency</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            flame: { 400: '#fb923c', 500: '#f97316', 600: '#ea580c' }
+          },
+          fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .gradient-text {
+      background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fdba74 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-black text-white antialiased">
+
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-semibold tracking-wider">FLAME <span class="text-flame-500">AGENCY</span></a>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-flame-400 transition">Início</a>
+        <a href="servicos.html" class="hover:text-flame-400 transition">Serviços</a>
+        <a href="quem-somos.html" class="hover:text-flame-400 transition">Quem Somos</a>
+        <a href="contato.html" class="text-flame-400">Contato</a>
+        <a href="login.html" class="ml-4 px-5 py-2 border border-flame-500 text-flame-400 rounded-full hover:bg-flame-500 hover:text-black transition font-medium">Já sou Cliente</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-white/10 px-6 py-4 flex flex-col gap-4 text-sm">
+      <a href="index.html">Início</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="quem-somos.html">Quem Somos</a>
+      <a href="contato.html" class="text-flame-400">Contato</a>
+      <a href="login.html" class="text-flame-400">Já sou Cliente</a>
+    </div>
+  </nav>
+
+  <section class="pt-32 pb-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-16">
+        
+        <!-- Texto -->
+        <div>
+          <p class="text-flame-400 text-sm font-medium tracking-widest uppercase mb-4">Contato</p>
+          <h1 class="text-4xl md:text-5xl font-bold mb-6">Vamos acender<br><span class="gradient-text">sua próxima chama</span></h1>
+          <p class="text-gray-400 text-lg mb-10 leading-relaxed">
+            Conte um pouco sobre o seu projeto. Nossa equipe responde o mais rápido possível 
+            para entendermos como podemos ajudar.
+          </p>
+
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-flame-500/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-flame-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <p class="font-medium">E-mail</p>
+                <a href="mailto:flameagencyltda@gmail.com" class="text-gray-400 hover:text-flame-400 transition">flameagencyltda@gmail.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <div class="bg-zinc-950 border border-white/10 rounded-2xl p-8">
+          <form action="#" method="POST" class="space-y-6">
+            <div>
+              <label class="block text-sm font-medium mb-2">Nome</label>
+              <input type="text" name="nome" required class="w-full px-4 py-3 bg-black border border-white/10 rounded-lg focus:outline-none focus:border-flame-500 transition" placeholder="Seu nome">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">E-mail</label>
+              <input type="email" name="email" required class="w-full px-4 py-3 bg-black border border-white/10 rounded-lg focus:outline-none focus:border-flame-500 transition" placeholder="seu@email.com">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">WhatsApp</label>
+              <input type="tel" name="whatsapp" class="w-full px-4 py-3 bg-black border border-white/10 rounded-lg focus:outline-none focus:border-flame-500 transition" placeholder="(11) 99999-9999">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-2">Como podemos ajudar?</label>
+              <textarea name="mensagem" rows="4" required class="w-full px-4 py-3 bg-black border border-white/10 rounded-lg focus:outline-none focus:border-flame-500 transition resize-none" placeholder="Conte um pouco sobre o seu projeto..."></textarea>
+            </div>
+            <button type="submit" class="w-full py-4 bg-flame-500 text-black font-semibold rounded-lg hover:bg-flame-400 transition">
+              Enviar mensagem
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-white/10 py-12">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div class="text-xl font-semibold tracking-wider">FLAME <span class="text-flame-500">AGENCY</span></div>
+      <div class="text-sm text-gray-500">© 2026 Flame Agency</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

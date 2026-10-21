@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flame Agency | Marketing que Incendeia Resultados</title>
+  <meta name="description" content="Flame Agency - Marketing afiado, criativo e pronto para incendiar resultados. Estratégia, produção visual e performance.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            flame: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              200: '#fed7aa',
+              300: '#fdba74',
+              400: '#fb923c',
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+              800: '#9a3412',
+              900: '#7c2d12',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+    .gradient-text {
+      background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fdba74 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-glow {
+      background: radial-gradient(ellipse at center, rgba(249, 115, 22, 0.15) 0%, transparent 70%);
+    }
+  </style>
+</head>
+<body class="bg-black text-white antialiased">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-semibold tracking-wider">
+        FLAME <span class="text-flame-500">AGENCY</span>
+      </a>
+      
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-flame-400 transition">Início</a>
+        <a href="servicos.html" class="hover:text-flame-400 transition">Serviços</a>
+        <a href="quem-somos.html" class="hover:text-flame-400 transition">Quem Somos</a>
+        <a href="contato.html" class="hover:text-flame-400 transition">Contato</a>
+        <a href="login.html" class="ml-4 px-5 py-2 border border-flame-500 text-flame-400 rounded-full hover:bg-flame-500 hover:text-black transition font-medium">
+          Já sou Cliente
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-btn" class="md:hidden text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black border-t border-white/10">
+      <div class="px-6 py-4 flex flex-col gap-4 text-sm">
+        <a href="index.html" class="hover:text-flame-400">Início</a>
+        <a href="servicos.html" class="hover:text-flame-400">Serviços</a>
+        <a href="quem-somos.html" class="hover:text-flame-400">Quem Somos</a>
+        <a href="contato.html" class="hover:text-flame-400">Contato</a>
+        <a href="login.html" class="text-flame-400 font-medium">Já sou Cliente</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <div class="absolute inset-0 hero-glow"></div>
+    
+    <div class="relative max-w-5xl mx-auto px-6 text-center">
+      <p class="text-flame-400 text-sm md:text-base font-medium tracking-[0.2em] uppercase mb-6">
+        Não limite seus desafios
+      </p>
+      
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8">
+        Desafie seus<br>
+        <span class="gradient-text">limites</span>
+      </h1>
+      
+      <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+        A chama do seu negócio começa aqui.<br>
+        Marketing afiado, criativo e pronto para incendiar resultados.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="contato.html" class="px-8 py-4 bg-flame-500 text-black font-semibold rounded-full hover:bg-flame-400 transition transform hover:scale-105">
+          Quero contratar
+        </a>
+        <a href="login.html" class="px-8 py-4 border border-white/30 text-white font-medium rounded-full hover:border-flame-500 hover:text-flame-400 transition">
+          Já sou cliente
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços em destaque -->
+  <section class="py-24 bg-zinc-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="text-flame-400 text-sm font-medium tracking-widest uppercase mb-3">O que fazemos</p>
+        <h2 class="text-3xl md:text-5xl font-bold">Soluções completas de marketing</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="group p-8 bg-black border border-white/10 rounded-2xl hover:border-flame-500/50 transition duration-300">
+          <div class="w-12 h-12 rounded-full bg-flame-500/10 flex items-center justify-center mb-6 group-hover:bg-flame-500/20 transition">
+            <svg class="w-6 h-6 text-flame-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Diagnóstico Estratégico</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Análise de mercado, público e concorrência para construir uma base sólida e decisões inteligentes.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="group p-8 bg-black border border-white/10 rounded-2xl hover:border-flame-500/50 transition duration-300">
+          <div class="w-12 h-12 rounded-full bg-flame-500/10 flex items-center justify-center mb-6 group-hover:bg-flame-500/20 transition">
+            <svg class="w-6 h-6 text-flame-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.069A1 1 0 0121 8.868v6.264a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Criação Visual</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Identidade visual, produção de fotos, vídeos e materiais criativos que realmente se destacam.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="group p-8 bg-black border border-white/10 rounded-2xl hover:border-flame-500/50 transition duration-300">
+          <div class="w-12 h-12 rounded-full bg-flame-500/10 flex items-center justify-center mb-6 group-hover:bg-flame-500/20 transition">
+            <svg class="w-6 h-6 text-flame-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Distribuição Multicanal</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Adaptação e publicação em redes sociais, sites, e-mail e onde seu público estiver.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="group p-8 bg-black border border-white/10 rounded-2xl hover:border-flame-500/50 transition duration-300">
+          <div class="w-12 h-12 rounded-full bg-flame-500/10 flex items-center justify-center mb-6 group-hover:bg-flame-500/20 transition">
+            <svg class="w-6 h-6 text-flame-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-3">Campanhas e Performance</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">
+            Campanhas com foco em vendas e análise constante de resultados para otimização contínua.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="servicos.html" class="inline-flex items-center gap-2 text-flame-400 hover:text-flame-300 font-medium transition">
+          Ver todos os serviços
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Depoimentos -->
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="text-flame-400 text-sm font-medium tracking-widest uppercase mb-3">Prova social</p>
+        <h2 class="text-3xl md:text-5xl font-bold">O que nossos clientes dizem</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-8 bg-zinc-950 border border-white/10 rounded-2xl">
+          <div class="flex gap-1 mb-6">
+            <span class="text-flame-500">★</span><span class="text-flame-500">★</span><span class="text-flame-500">★</span><span class="text-flame-500">★</span><span class="text-flame-500">★</span>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            “A equipe é criativa, rápida e muito profissional. Entregaram mais do que prometeram. O vídeo institucional ficou simplesmente sensacional.”
+          </p>
+          <p class="font-semibold">Thiago Lima</p>
+        </div>
+
+        <div class="p-8 bg-zinc-950 border border-white/10 rounded-2xl">
+          <div class="flex gap-1 mb-6">
+            <span class="text-flame-500">★</span><span class="text-flame-500">★</span><span class="text-flame-500">★</span><span class="text-flame-500">★</span><span class="text-flame-500">★</span>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            “Contratar a Flame foi a melhor decisão para o meu negócio. Saí do zero e hoje tenho uma identidade forte, com conteúdos que realmente engajam.”
+          </p>
+          <p class="font-semibold">Bruna Martins</p>
+        </div>
+
+        <div class="p-8 bg-zinc-950 border border-white/10 rounded-2xl">
+          <div class="flex gap-1 mb-6">
+            <span class="text-flame-500">★</span><span class="text-flame-500">★</span><span class="text-flame-500">★</span><span class="text-flame-500">★</span><span class="text-flame-500">★</span>
+          </div>
+          <p class="text-gray-300 mb-6 leading-relaxed">
+            “A Flame transformou totalmente a presença digital da nossa marca. O conteúdo ficou incrível e as campanhas deram resultado logo nas primeiras semanas.”
+          </p>
+          <p class="font-semibold">Mariana Costa</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="py-24 bg-zinc-950">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">
+        Pronto para acender a<br>
+        <span class="gradient-text">chama do seu negócio?</span>
+      </h2>
+      <p class="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+        Estratégia, criatividade e performance. Tudo o que sua marca precisa para crescer de verdade.
+      </p>
+      <a href="contato.html" class="inline-block px-10 py-4 bg-flame-500 text-black font-semibold rounded-full hover:bg-flame-400 transition transform hover:scale-105">
+        Quero começar agora
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="text-xl font-semibold tracking-wider">
+          FLAME <span class="text-flame-500">AGENCY</span>
+        </div>
+        
+        <div class="flex gap-8 text-sm text-gray-400">
+          <a href="servicos.html" class="hover:text-white transition">Serviços</a>
+          <a href="quem-somos.html" class="hover:text-white transition">Quem Somos</a>
+          <a href="contato.html" class="hover:text-white transition">Contato</a>
+          <a href="login.html" class="hover:text-flame-400 transition">Área do Cliente</a>
+        </div>
+        
+        <div class="text-sm text-gray-500">
+          © 2026 Flame Agency. Todos os direitos reservados.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
